@@ -1,11 +1,12 @@
 <template>  
-  <desafioUm></desafioUm>
+  <desafioDois></desafioDois>
 </template>
 
 <script>
 //import HomePage from './components/HomePage.vue',
 //import TwitterClone from './components/TwitterClone.vue',
-import desafioUm from './components/desafioUm.vue'
+//import desafioUm from './components/desafioUm.vue'
+import desafioDois from './components/desafioDois.vue'
 import './assets/style.css'
 
 export default {
@@ -13,7 +14,8 @@ export default {
   components: {
     //HomePage,
     //TwitterClone,
-    desafioUm,
+    //desafioUm,
+    desafioDois
   }
 }
 </script>

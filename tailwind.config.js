@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'background': "url('./src/assets/desafioDois/wallpaper.jpeg')",
+        
+      },
       colors: {
         'cork': {          
           '900': '#43291f',        
