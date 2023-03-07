@@ -1,0 +1,119 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Quattrocento', serif;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width:660px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+   }
+   
+    .main-section-title{
+        font-size: 3em;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .main-skill-title{
+        text-align: center;
+    }
+    .skills-card{
+        flex-direction: column;
+    
+    }
+    .card{
+        margin-bottom: 3em;
+    }
+
+    
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    height: 50px;
+    color: #E0E0E2;
+    background-color: #000814;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+}
+nav ul,p{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+nav ul li{
+    padding: 0 10px;
+}
+.main-section-text{
+    padding: 0;
+}
+
+.home {
+    width: 80%;
+    margin: 0 auto; 
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.home-text{
+    width: 50%;
+    padding: 20px;
+}
+section h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    color: #ffd60a;
+    margin: 20px 0;
+}
+section p{
+    font-family: 'Quattrocento', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+.skills{
+    width: 80%;
+    margin: 0 auto;
+}
+.card {
+    width: 16em;
+    height: 10em;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+} 
+
+.skills-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.skills-title{
+    margin-top: 1em;
+    text-align: center;
+}
+.skills-logo{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.main-skill-title{
+    margin-top:3em;
+}
