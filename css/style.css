@@ -36,6 +36,10 @@ font-family: 'Quattrocento', serif;
     background-color: #d2454d;
 
   }
+  a{
+        color: #E0E0E2;
+        text-decoration: none;
+  }
    
 }
 
