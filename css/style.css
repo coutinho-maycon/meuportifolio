@@ -60,14 +60,32 @@ font-family: 'Quattrocento', serif;
         display: block;
     }
 
-    .about {
+    section.about {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
         flex-direction: column;
+        align-content: space-around;
+        height: 100vh;
+    }
+
+    section.about p {
+        text-align: justify;
+
     }
 
     section.about img {
-        border-radius: 75%;
-        width: auto;
-        height: 10em;
+        display: flex;
+        border-radius: 50%;
+        margin: 0 auto;
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .about-content-text {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-color: red;
     }
 
     #animated {
