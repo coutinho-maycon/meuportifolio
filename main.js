@@ -1,6 +1,8 @@
-const hamburger = document.querySelector('.hamburger');
-const menu = document.querySelector('.menu');
+const menu = document.getElementsByClassName('menu')
 
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('show');
-});
+function fecharMenu(){
+    menu[0].classList.add('sumir-menu')
+    
+}
+
+console.log(menu)

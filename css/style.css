@@ -11,35 +11,38 @@ font-family: 'Quattrocento', serif;
 }
 @media (max-width:660px) {
    .presentation{
-         display: flex;
-         flex-direction: column;
+        display: flex;
+        flex-direction: column;
    }
-   .menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .menu ul {
-    flex-direction: column;
-  }
-
-  .menu li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .hamburger {
-    display: block;
+   .menu{
+        position: absolute;
+        right: 0;
+        width: 70vw;
+        height: 100vh;
+        background-color: #000814;
+        z-index: 1;     
+        
+   }
+   .sumir-menu{
     background-color: #d2454d;
+    transform: translateX(100%);
+   }
+   .menu ul{
+        flex-direction: column;       
+        padding: 1px;
+   }
+   .menu ul li{
+        padding: 20px;
+        margin: 0;     
+   }
+   .close-icon{
+        position: absolute;
+        right:0;
+   }
+   .mobile-menu{
+        display: block;
+   }
 
-  }
-  a{
-        color: #E0E0E2;
-        text-decoration: none;
-  }
    
 }
 
@@ -51,6 +54,8 @@ font-family: 'Quattrocento', serif;
     align-items: center;
     background-color: #000814;
 }
+
+
 body{
     background-color: #000814;
     font-family: 'Quattrocento', serif;
@@ -95,43 +100,30 @@ nav ul li{
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .menu li {
+.menu li {
     margin-left: 20px;
-  }
+}
   
-  .menu li a {
+.menu li a {
     text-decoration: none;
     color: #fff;
-  }
-  
-  .hamburger {
-    display: none;
-    flex-direction: column;
+}
+.presentation a {
+    text-decoration: none;
+    color: #fff;
+}
+.mobile-menu{
     cursor: pointer;
-  }
-  
-  .hamburger span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-.hamburger {
     display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .hamburger span {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;   
+}
 .presentation{
     position: absolute;
     display: flex; 
@@ -180,7 +172,7 @@ nav ul li{
       transform: translatey(0px);
     }
     50% {
-      transform: translatey(-10 px)
+      transform: translatey(-10px)
       
     }
     100% {
