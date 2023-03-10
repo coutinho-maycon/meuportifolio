@@ -10,6 +10,12 @@ font-family: 'Quattrocento', serif;
     box-sizing: border-box;
 }
 @media (max-width:660px) {
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        width: 100%;
+    }
    .presentation{
         display: flex;
         flex-direction: column;
@@ -20,12 +26,12 @@ font-family: 'Quattrocento', serif;
         width: 70vw;
         height: 100vh;
         background-color: #000814;
-        z-index: 1;     
-        
+        z-index: 1; 
+        transform: translateX(0%);        
    }
    .sumir-menu{
-    background-color: #d2454d;
     transform: translateX(100%);
+    transition: 0.5s;
    }
    .menu ul{
         flex-direction: column;       
@@ -36,6 +42,7 @@ font-family: 'Quattrocento', serif;
         margin: 0;     
    }
    .close-icon{
+        display: block;
         position: absolute;
         right:0;
    }
@@ -101,7 +108,7 @@ nav ul li{
     margin: 0;
     padding: 0;
 }
-  
+
 .menu li {
     margin-left: 20px;
 }
