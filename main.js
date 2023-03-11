@@ -19,6 +19,5 @@ function abrirMenu() {
 function fecharMenu() {
   menu[0].classList.add('menu_')
   console.log("fechou")
-
 }
 
