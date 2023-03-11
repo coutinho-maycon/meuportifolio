@@ -35,16 +35,17 @@ font-family: 'Quattrocento', serif;
 
     }
 
+    .menu_ {
+        transform: translateY(-100%);
+    }
+
     .menu .close-icon {
         display: block;
         position: absolute;
         right: 0;
     }
 
-    .sumir-menu {
-        transform: translateX(100%);
-        transition: 0.5s;
-    }
+
 
     .menu ul {
         flex-direction: column;
